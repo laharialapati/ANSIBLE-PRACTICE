@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\ODD_SEM_DEVOPS\RECIPE-ANSIBLE\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1868619517.index
+2791988623.index
+4051721194.index
+4054014196.index
+2159967067.index

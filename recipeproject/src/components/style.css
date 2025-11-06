@@ -1,0 +1,270 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === GLOBAL === */
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fff0e6 0%, #e8ffe8 50%, #f5ecff 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 60px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+.nav-logo span {
+  background: linear-gradient(90deg, #ff8a00, #ff3c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+/* === CONTAINER === */
+.container {
+  max-width: 1100px;
+  width: 90%;
+  margin: 50px auto;
+}
+
+/* === MESSAGE === */
+.message {
+  background: linear-gradient(135deg, #ff8a00, #ff3c00);
+  color: white;
+  padding: 14px 18px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 15px rgba(255, 120, 50, 0.4);
+  font-weight: 500;
+  animation: popFade 0.4s ease;
+}
+
+@keyframes popFade {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* === SECTION STYLES === */
+.form-section,
+.list-section {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 25px;
+  padding: 35px 45px;
+  margin-bottom: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.form-section:hover,
+.list-section:hover {
+  box-shadow: 0 20px 40px rgba(255, 150, 100, 0.2);
+}
+
+/* === HEADINGS === */
+h2 {
+  font-size: 1.8rem;
+  color: #ff3c00;
+  margin-bottom: 25px;
+  border-left: 5px solid #ff8a00;
+  padding-left: 12px;
+}
+
+/* === FORM INPUTS === */
+.input,
+.textarea {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 16px;
+  border: 2px solid #ffeedb;
+  border-radius: 14px;
+  background: #fffdf9;
+  color: #000; /* Text color black */
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #ffb366;
+  box-shadow: 0 0 10px rgba(255, 180, 100, 0.3);
+  outline: none;
+  background: white;
+  color: #000; /* Text remains black on focus */
+}
+
+/* ✅ PLACEHOLDERS DARK */
+::placeholder {
+  color: #222;
+  opacity: 1;
+  font-weight: 500;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* === BUTTONS === */
+.button-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-btn {
+  background: linear-gradient(135deg, #ff8a00, #ff3c00);
+  color: white;
+  box-shadow: 0 6px 15px rgba(255, 120, 50, 0.3);
+}
+
+.update-btn {
+  background: linear-gradient(135deg, #48c6ef, #6f86d6);
+  color: white;
+  box-shadow: 0 6px 15px rgba(90, 150, 255, 0.3);
+}
+
+.cancel-btn {
+  background: #f3f6fa;
+  color: #333;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* === RECIPE CARDS === */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 25px;
+}
+
+.recipe-card {
+  background: #fff;
+  border-radius: 20px;
+  border: 1.5px solid #ffe0cc;
+  box-shadow: 0 10px 25px rgba(255, 150, 100, 0.1);
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(255, 150, 100, 0.3);
+}
+
+.recipe-card h3 {
+  color: #ff3c00;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.recipe-card p {
+  color: #444;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.card-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn {
+  flex: 1;
+  background: linear-gradient(135deg, #48c6ef, #6f86d6);
+  color: white;
+}
+
+.delete-btn {
+  flex: 1;
+  background: linear-gradient(135deg, #ff5858, #f09819);
+  color: white;
+}
+
+/* === EMPTY STATE === */
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #777;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form-section,
+  .list-section {
+    padding: 25px 20px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
