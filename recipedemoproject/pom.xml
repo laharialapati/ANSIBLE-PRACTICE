@@ -16,7 +16,6 @@
     <groupId>com.klef.dev</groupId>
     <artifactId>recipemanagementapi</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
 
     <name>Recipe Management API</name>
     <description>Spring Boot backend for Recipe Management</description>

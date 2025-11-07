@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class RecipedemoprojectApplication extends SpringBootServletInitializer {
+public class RecipedemoprojectApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(RecipedemoprojectApplication.class, args);
