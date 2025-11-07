@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
 
-const API_URL = `${import.meta.env.VITE_API_URL}/recipeapi`;
+const API_BASE = `${import.meta.env.VITE_API_URL}/recipeapi`;
 
 export default function RecipeApp() {
   const [recipes, setRecipes] = useState([]);
